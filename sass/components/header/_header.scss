@@ -1,0 +1,11 @@
+.page-header__container {
+  @media screen and (max-width: ($tablet - 1px)) {
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ececec;
+  }
+  
+}

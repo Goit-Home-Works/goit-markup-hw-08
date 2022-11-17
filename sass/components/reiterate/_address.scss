@@ -1,0 +1,77 @@
+.page-header-address__list {
+    @media screen and (max-width: ($tablet - 1px)) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        margin-top: 306px;
+    }
+}
+
+
+
+.firm-address__item {
+    @extend %list;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header-address__item {
+    display: inline-flex;
+    @media screen and (max-width: ($tablet - 1px)) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: calc(40/34);
+            letter-spacing: 0.02em;
+            color: $accent-color;
+    
+            &:nth-child(1) {
+                font-size: 24px;
+                line-height: calc(28/24);
+                color: $primary-color;
+            }
+        }
+    
+}
+
+.firm-address__link {
+    @extend %link;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+
+.map {
+    color: $white;
+
+}
+
+// icon
+%div-icon-adress {
+    display: inline-flex;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    @extend %div-icon-adress;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    @extend %div-icon-adress;
+}
+
+.address-icon {
+    @extend %icons;
+}
