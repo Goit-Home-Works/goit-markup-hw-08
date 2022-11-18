@@ -1,17 +1,7 @@
-@import "./utils/normalize";
-@import "./utils/variables";
-@import "./utils/repeating-rules";
-@import "./components/reiterate/logo";
-@import "./components/reiterate/filter";
-@import "./components/reiterate/address";
-@import "./components/reiterate/socials";
 
-@import "./components/key-features";
-@import "./components/we-do";
-@import "./components/our-team";
-@import "./components/hero";
-@import "./components/backdrop";
-
-
+@import "./utils/index";
+@import "./components/reiterate/index";
 @import "./components/header/index";
-
+@import "./components/studio/index";
+@import "./components/footer/index";
+@import "./components/portfolio/index";
