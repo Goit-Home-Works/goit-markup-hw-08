@@ -422,20 +422,17 @@ button {
 }
 
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-}
-
-.logo {
+  font-size: 24px;
+  line-height: 1.1666666667;
   color: #000000;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (min-width: 1200px) {
   .logo {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 1.1666666667;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    font-size: 26px;
   }
 }
 
@@ -517,19 +514,32 @@ button {
   fill: #ffffff;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header__logo {
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__logo {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    padding: 24px 0 25px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .page-header__box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .page-header__container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-bottom: 1px solid #ececec;
+    display: none;
   }
 }
 

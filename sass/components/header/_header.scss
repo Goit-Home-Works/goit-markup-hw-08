@@ -1,11 +1,28 @@
-.page-header__container {
-  @media screen and (max-width: ($tablet - 1px)) {
-    position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.page-header {
   border-bottom: 1px solid #ececec;
+
+
+  &__logo {
+    padding: 16px 0;
+
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      padding: 26px 0;
+    }
+
+        @media screen and (min-width: $desktop) {
+          padding: 24px 0 25px;
+        }
   }
-  
+}
+
+.page-header__box {
+  @media screen and (max-width: $pre-tablet) {
+    display: none;
+  }
+}
+.page-header__container {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+    
 }
