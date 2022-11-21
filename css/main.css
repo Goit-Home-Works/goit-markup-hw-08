@@ -316,15 +316,9 @@ button {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (max-width: 479px) {
-  .container {
-    max-width: 480px;
-  }
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -531,6 +525,10 @@ button {
   }
 }
 
+.page-header__container {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__box {
     display: none;
@@ -538,9 +536,18 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__container {
+  .page-header__menu-container {
     display: none;
   }
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-button {
@@ -564,12 +571,19 @@ button {
   width: 40px;
   height: 40px;
   margin-left: auto;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle,
 .menu-button {
     display: none;
   }
+}
+.menu-toggle:hover, .menu-toggle:focus,
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
