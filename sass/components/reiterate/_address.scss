@@ -1,9 +1,8 @@
 .page-header-address__list {
-    @media screen and (max-width: ($tablet - 1px)) {
+    @media screen and (max-width: $pre-tablet) {
         display: flex;
         flex-direction: column-reverse;
         gap: 32px;
-        margin-top: 306px;
     }
 }
 
@@ -17,7 +16,7 @@
 
 .page-header-address__item {
     display: inline-flex;
-    @media screen and (max-width: ($tablet - 1px)) {
+    @media screen and (max-width: $pre-tablet) {
             font-style: normal;
             font-weight: 500;
             font-size: 34px;

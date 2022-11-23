@@ -1,19 +1,16 @@
-.menu-button {
-    display: inline-flex;
+
+.menu-button--toggle {
+    display: block;    
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 15px;
     & .icon-close {
         @extend %icons;
     }
 }
-.menu-toggle,
+
+
+
 .menu-button {
-    display: inline-flex;
     width: 40px;
     height: 40px;
     margin-left: auto;
