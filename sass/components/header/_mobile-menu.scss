@@ -24,7 +24,6 @@
     padding-right: 15px;
     padding-left: 40px;
     max-width: 480px;
-    height: 100%;
       margin: 0 auto;
 }
 
@@ -63,11 +62,7 @@ flex-direction: column-reverse;
 gap: 32px;
 font-weight: 500;
 letter-spacing: 0.02em;
-margin: 306px 0 0 0;
-
-display: block;
   width: 100%;
-  margin-top: auto;
 
 }
 
@@ -85,7 +80,6 @@ display: block;
     font-size: 34px;
     line-height: calc(40/34);
     color: $accent-color;
-
 }
 
 .mobile-socials__list {
