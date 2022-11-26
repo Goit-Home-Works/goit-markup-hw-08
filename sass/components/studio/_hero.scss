@@ -1,9 +1,18 @@
 .hero {
-  display: flex;
-  max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  text-align: center;
+
+      padding-top: 118px;
+        padding-bottom: 118px;
+
+      height: 400px;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
@@ -12,30 +21,47 @@
   background-size: cover;
 
   & .button {
-    display: flex;
-    width: 216px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
+    @media screen and (min-width: $mobile) {
+      max-width: $pre-tablet;
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: $pre-desktop;
+    }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+
 }
 
 .hero__title {
-  margin-top: 0;
+margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 
-  text-align: center;
-
   font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+
+  @media screen and (min-width: $desktop) {
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
+  }
 
 }
