@@ -15,12 +15,13 @@
     height: 40px;
     margin-left: auto;
     transition: fill 250ms $time-function;
-    @media screen and (min-width: $tablet) {
-        display: none;
-        
-    }
+    
     &:hover,
     &:focus {
         fill: $accent-color;
     }
+        @media screen and (min-width: $tablet) {
+            display: none;
+    
+        }
 }

@@ -9,9 +9,9 @@
       padding: 26px 0;
     }
 
-        @media screen and (min-width: $desktop) {
-          padding: 24px 0 25px;
-        }
+    @media screen and (min-width: $desktop) {
+      padding: 24px 0 25px;
+    }
   }
 }
 
@@ -21,16 +21,22 @@
   @media screen and (max-width: $pre-tablet) {
     display: none;
   }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: auto;
 }
+
 .page-header__menu-container {
   @media screen and (min-width: $tablet) {
     display: none;
   }
-    
+
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
-
 }

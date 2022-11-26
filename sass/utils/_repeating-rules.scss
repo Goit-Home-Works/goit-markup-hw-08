@@ -49,7 +49,7 @@ button {
   color: $primary-color;
 }
 .container {
-  width: 100%;
+  width: 100vw;
   padding: 0 15px;
   margin: 0 auto;
 
@@ -62,7 +62,7 @@ button {
     width: $tablet;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     width: $desktop;
   }
 }
