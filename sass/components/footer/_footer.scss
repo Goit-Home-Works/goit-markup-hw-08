@@ -1,14 +1,45 @@
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.footer-box {
+.page-footer__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+  }
+
 }
 
-.footer-section1 {
+.page-footer__section1 {
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+      text-align: left;
+  
+    }
 }
 
 .discover {
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+      text-align: left;
+  
+    }
 
   &__title {
     font-weight: 700;
@@ -17,6 +48,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 20px;
   }
 
   & .social-list {

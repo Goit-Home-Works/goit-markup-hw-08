@@ -22,6 +22,8 @@
   @extend %list;
   
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   
@@ -30,8 +32,12 @@
 
 .frequent-customers__item {
   display: flex;
+    padding: 16px 5vw;
+
+  @media screen and (min-width: $mobile) {
   width: 210px;
   padding: 16px 50px;
+  }
   @media screen and (min-width: $tablet) {
     width: 226px;
     padding: 16px 46px;
