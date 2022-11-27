@@ -1,26 +1,65 @@
-.frequent-customers__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+.frequent-customers {
   text-align: center;
-  letter-spacing: 0.03em;
-  color: $secondary-color;
+}
+
+.frequent-customers__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+
+    @media screen and (min-width :$desktop) {
+      margin-bottom: 50px;
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
+  
 }
 
 .frequent-customers__list {
-
   @extend %list;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
 }
 
-.frequent-customers__icon-box {
-  width: 170px;
-  height: 92px;
+
+.frequent-customers__item {
+  display: flex;
+  width: 210px;
+  padding: 16px 50px;
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+    padding: 16px 46px;
+  }
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+      padding: 16px 30px;
+    }
+
+  padding: 16px auto;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
+  transition: border-color 250ms $time-function;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+
+
+.frequent-customers__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+    height: 60px;
+
+  transition: fill 250ms $time-function;
 
   &:hover,
   &:focus {

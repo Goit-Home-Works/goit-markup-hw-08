@@ -3,6 +3,8 @@
 }
 
 .our-team__title {
+  padding-bottom: 30px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -11,10 +13,31 @@
 }
 
 .our-team__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  
 }
 
 .our-team__member {
   @extend %list;
+}
+.our-team__image {
+  display: block;
+  @media screen and (max-width: $pre-tablet) {
+    max-width: 450px;
+    max-height: 622px;
+  }
+    @media screen and (max-width: $pre-desktop) {
+      max-width: 354px;
+      max-height: 374px;
+    }
+        @media screen and (min-width: $desktop) {
+          max-width: 270px;
+          max-height: 260px;
+        }
 }
 
 .our-team__description {
@@ -27,8 +50,6 @@
 }
 
 .our-team__employee {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;

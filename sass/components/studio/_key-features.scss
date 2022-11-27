@@ -3,7 +3,23 @@
   display: flex;
   gap: 30px;
   flex-direction: column;
+  @media screen and (min-width: $tablet) {
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+ 
 
+}
+
+.key-features__item {
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - (30px*3)) / 4);
+    }
 }
 
 .key-features__icon {
@@ -13,7 +29,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // max-width: 450px;
     height: 120px;
    & .icon {
     width: 70px;
@@ -27,16 +42,15 @@
 
 }
 .key-features__titles {
+  margin-top: 30px;
+    margin-bottom: 10px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16/14);
   text-transform: uppercase;
   color: $secondary-color;
-text-align: center;
-vertical-align: middle;
-margin-top: 30px;
-margin-bottom: 10px;
+ 
 
 }
 
