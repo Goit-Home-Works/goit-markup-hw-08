@@ -10,45 +10,11 @@
       max-width: 1600px;
       margin: 0 auto;
       padding: 118px 0;
+      background-color: #c4c4c4;
       
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../img/hero/banner-480.jpg") no-repeat center/cover, #c4c4c4;
-  
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url("../img/hero/banner-480@2x.jpg") no-repeat center/cover, #c4c4c4;
-      }
-  
-      @media screen and (min-width: $tablet) {
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url("../img/hero/banner-768.jpg") no-repeat center/cover, #c4c4c4;
-  
-        @media screen and (min-width: $tablet),
-        (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background: linear-gradient(rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)),
-            url("../img/hero/banner-768.jpg@2x.jpg") no-repeat center/cover, #c4c4c4;
-        }
-      }
-  
-      @media screen and (min-width: $desctop) {
-        padding: 200px 0;
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url("../img/hero/banner-1200.jpg.jpg") no-repeat center/cover, #c4c4c4;
-  
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background: linear-gradient(rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)),
-            url("../img/hero/banner-1200.jpg@2x.jpg") no-repeat center/cover,
-            #c4c4c4;
-        }
-      }
+        url("../img/hero/banner-480.jpg") no-repeat center/cover;
+
 
   & .button {
     margin: auto;

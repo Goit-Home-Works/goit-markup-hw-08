@@ -859,15 +859,12 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 118px 0;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/banner.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/banner-480.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/banner-480.jpg") no-repeat center/cover;
 }
 .hero .button {
   margin: auto;
