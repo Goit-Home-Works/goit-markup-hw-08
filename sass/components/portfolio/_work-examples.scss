@@ -13,10 +13,11 @@
   @extend %list;
 
   max-width: 450px;
-  height: auto;
+  // height: auto;
 
   @media screen and (min-width: $tablet) {
   max-width: 354px;
+
   }
 
   @media screen and (min-width: $desktop) {
@@ -29,6 +30,9 @@
   @extend %link;
 
   display: flex;
+
+  height: 100%;
+    
   flex-direction: column;
   transition: box-shadow 250ms $time-function;
 
@@ -83,7 +87,11 @@
 }
 
 .work-examples__border {
-  padding: 20px 0 20px 24px;
+  @media screen and (min-width: $tablet) {
+    flex-grow: 1;
+  }
+
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

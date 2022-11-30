@@ -1744,7 +1744,6 @@ img {
 
 .work-examples__item {
   max-width: 450px;
-  height: auto;
 }
 @media screen and (min-width: 768px) {
   .work-examples__item {
@@ -1761,6 +1760,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1819,10 +1819,17 @@ img {
 }
 
 .work-examples__border {
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .work-examples__border {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .work-examples__title {
