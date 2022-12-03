@@ -77,55 +77,55 @@
       </button>
 
       <div class="menu-container  page-header__menu-container js-menu-container" id="mobile-menu">
-          <div class="mobile-container__modal">
-            <button class="menu-button menu-button--toggle page-header__menu-button js-close-menu">
-              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use class="icon-close" href="./img/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-            <div class="page-header__menu-box">
-              <nav class="mobile-nav page-header__mobile-nav">
-                <ul class="mobile-nav__link">
-                  <li class="mobile-nav__item">
-                    <a href="./index.html" class="nav__studio">Студія</a>
-                  </li>
-                  <li class="mobile-nav__item">
-                    <a href="./portfolio.html" class="nav__portfolio">Портфоліо</a>
-                  </li>
-                  <li class="mobile-nav__item">
-                    <a href="#" class="nav__contacts">Контакти</a>
-                  </li>
-                </ul>
-              </nav>
-              <!--КОНТАКТИ-->
-              <ul class="mobile-address__list">
-                <li class="mobile-address__item">
-                  <a href="mailto:info@devstudio.com" lang="en" class="mobile-address__link--mail">info@devstudio.com</a>
+        <div class="mobile-container__modal">
+          <button class="menu-button menu-button--toggle page-header__menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-close" href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="page-header__menu-box">
+            <nav class="mobile-nav page-header__mobile-nav">
+              <ul class="mobile-nav__link">
+                <li class="mobile-nav__item">
+                  <a href="./index.html" class="nav__studio">Студія</a>
                 </li>
-                <li class="mobile-address__item">
-                  <a href="tel:+380961111111" class="mobile-address__link--tel">38 096 111 11 11</a>
+                <li class="mobile-nav__item">
+                  <a href="./portfolio.html" class="nav__portfolio">Портфоліо</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#" class="nav__contacts">Контакти</a>
                 </li>
               </ul>
-              <ul class="mobile-socials__list">
-                <li class="mobile-socials__item">
-                  <a href="#" class="mobile-socials__link">Instagram
-                  </a>
-                </li>
-                <li class="mobile-socials__item">
-                  <a href="#" class="mobile-socials__link">Twitter
-                  </a>
-                </li>
-                <li class="mobile-socials__item">
-                  <a href="#" class="mobile-socials__link">Facebook
-                  </a>
-                </li>
-                <li class="mobile-socials__item">
-                  <a href="#" class="mobile-socials__link">LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
+            </nav>
+            <!--КОНТАКТИ-->
+            <ul class="mobile-address__list">
+              <li class="mobile-address__item">
+                <a href="mailto:info@devstudio.com" lang="en" class="mobile-address__link--mail">info@devstudio.com</a>
+              </li>
+              <li class="mobile-address__item">
+                <a href="tel:+380961111111" class="mobile-address__link--tel">38 096 111 11 11</a>
+              </li>
+            </ul>
+            <ul class="mobile-socials__list">
+              <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Instagram
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Twitter
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Facebook
+                </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
 
     </div>
@@ -273,18 +273,45 @@
         <h2 class="we-do__title">Чим ми займаємося</h2>
         <ul class="we-do__list">
           <li class="we-do__item">
-            <img class="image we-do__image" src="./img/service-web-development.jpg" alt="Десктопні додатки" width="370"
-              height="294" />
+
+            <picture>
+              <source srcset="
+                ./img/we-do/desktop-apps.webp 1x,
+                ./img/we-do/desktop-apps@2x.webp 2x" type="image/webp" />
+
+              <img class="image we-do__image" srcset="
+                ./img/we-do/desktop-apps.jpg 1x,
+                ./img/we-do/desktop-apps@2x.jpg 2x" src="./img/we-do/desktop-apps.jpg" alt="Десктопні додатки" />
+            </picture>
             <p class="we-do__service">Десктопні додатки</p>
           </li>
           <li class="we-do__item">
-            <img class="image we-do__image" src="./img/service-Adaptive-layout.jpg" alt="Мобільні додатки" width="370"
-              height="294" />
+
+            <picture>
+              <source srcset="
+                ./img/we-do/mobile-apps.webp 1x,
+                ./img/we-do/mobile-apps@2x.webp 2x" type="image/webp" />
+
+              <img class="image we-do__image" srcset="
+                ./img/we-do/mobile-apps.jpg 1x,
+                ./img/we-do/mobile-apps@2x.jpg 2x" src="./img/we-do/mobile-apps.jpg" alt="Мобільні додатки" />
+            </picture>
+
             <p class="we-do__service">Мобільні додатки</p>
           </li>
           <li class="we-do__item">
-            <img class="image we-do__image" src="./img/service-design-solutions.jpg" alt="Дизанерські рішення"
-              width="370" height="294" />
+
+            <picture>
+              <source srcset="
+                ./img/we-do/design-solutions.webp 1x,
+                ./img/we-do/design-solutions@2x.webp 2x" type="image/webp" sizes="(min-width: 1200px) 33vw" />
+
+              <img class="image we-do__image" srcset="
+                ./img/we-do/design-solutions.jpg 1x,
+                ./img/we-do/design-solutions@2x.jpg 2x" src="./img/we-do/design-solutions.jpg"
+                sizes="(min-width: 1200px) 33vw" alt="Дизайнерські рішення" />
+            </picture>
+
             <p class="we-do__service">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -298,8 +325,27 @@
         <h2 class="our-team__title">Наша команда</h2>
         <ul class="our-team__list">
           <li class="our-team__member">
-            <img class="image our-team__image" src="./img/team-product-designer.jpg" alt="Дизайнер продукту" width="270"
-              height="260" />
+
+            <picture>
+              <source srcset="
+                ./img/team/prod-design270.webp 270w,
+                ./img/team/prod-design354.webp 354w,
+                ./img/team/prod-design450.webp 450w,
+                    ./img/team/prod-design270@2x.webp 540w,
+                    ./img/team/prod-design354@2x.webp 708w,
+                    ./img/team/prod-design450@2x.webp 900w" type="image/webp"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image our-team__image" srcset="
+                ./img/team/prod-design270.jpg 270w,
+                ./img/team/prod-design354.jpg 354w,
+                ./img/team/prod-design450.jpg 450w,
+                    ./img/team/prod-design270@2x.jpg 540w,
+                    ./img/team/prod-design354@2x.jpg 708w,
+                    ./img/team/prod-design450@2x.jpg 900w" src="./img/team/prod-design270.jpg" alt="Product Designer"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
+
             <div class="our-team__description">
               <h3 class="our-team__employee">Ігор Дем'яненко</h3>
               <p lang="en" class="our-team__position">Product Designer</p>
@@ -336,8 +382,27 @@
             </div>
           </li>
           <li class="our-team__member">
-            <img class="image our-team__image" src="./img/team-frontend-developer.jpg" alt="Розробник інтерфейсу"
-              width="270" height="260" />
+
+            <picture>
+              <source srcset="
+                ./img/team/front-dev270.webp 270w,
+                ./img/team/front-dev354.webp 354w,
+                ./img/team/front-dev450.webp 450w,
+                    ./img/team/front-dev270@2x.webp 540w,
+                    ./img/team/front-dev354@2x.webp 708w,
+                    ./img/team/front-dev450@2x.webp 900w" type="image/webp"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image our-team__image" srcset="
+                ./img/team/front-dev270.jpg 270w,
+                ./img/team/front-dev354.jpg 354w,
+                ./img/team/front-dev450.jpg 450w,
+                    ./img/team/front-dev270@2x.jpg 540w,
+                    ./img/team/front-dev354@2x.jpg 708w,
+                    ./img/team/front-dev450@2x.jpg 900w" src="../img/team/front-dev270.jpg" alt="Frontend Developer"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
+
             <div class="our-team__description">
               <h3 class="our-team__employee">Ольга Рєпіна</h3>
               <p lang="en" class="our-team__position">Frontend Developer</p>
@@ -375,8 +440,29 @@
             </div>
           </li>
           <li class="our-team__member">
-            <img class="image our-team__image" src="./img/team-marketing.jpg" alt="Маркетолог" width="270"
-              height="260" />
+
+            <picture>
+              <source srcset="
+                ./img/team/marketing270.webp 270w,
+                ./img/team/marketing354.webp 354w,
+                ./img/team/marketing450.webp 450w,
+                    ./img/team/marketing270@2x.webp 540w,
+                    ./img/team/marketing354@2x.webp 708w,
+                    ./img/team/marketing450@2x.webp 900w" type="image/webp"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image our-team__image" srcset="
+                ./img/team/marketing270.jpg 270w,
+                ./img/team/marketing354.jpg 354w,
+                ./img/team/marketing450.jpg 450w,
+                    ./img/team/marketing270@2x.jpg 540w,
+                    ./img/team/marketing354@2x.jpg 708w,
+                    ./img/team/marketing450@2x.jpg 900w" src="./img/team/marketing270.jpg" alt="Marketing"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
+
+
+
             <div class="our-team__description">
               <h3 class="our-team__employee">Микола Тарасов</h3>
               <p lang="en" class="our-team__position">Marketing</p>
@@ -414,8 +500,27 @@
             </div>
           </li>
           <li class="our-team__member">
-            <img class="image our-team__image" src="./img/team-ui-designer.jpg" alt="Дизайнер інтерфейсу" width="270"
-              height="260" />
+
+            <picture>
+              <source srcset="
+                ./img/team/ui-design270.webp 270w,
+                ./img/team/ui-design354.webp 354w,
+                ./img/team/ui-design450.webp 450w,
+                    ./img/team/ui-design270@2x.webp 540w,
+                    ./img/team/ui-design354@2x.webp 708w,
+                    ./img/team/ui-design450@2x.webp 900w" type="image/webp"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image our-team__image" srcset="
+                ./img/team/ui-design270.jpg 270w,
+                ./img/team/ui-design354.jpg 354w,
+                ./img/team/ui-design450.jpg 450w,
+                    ./img/team/ui-design270@2x.jpg 540w,
+                    ./img/team/ui-design354@2x.jpg 708w,
+                    ./img/team/ui-design450@2x.jpg 900w" src="./img/team/ui-design270.jpg" alt="UI Designer"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
+
             <div class="our-team__description">
               <h3 class="our-team__employee">Михайло Єрмаков</h3>
               <p lang="en" class="our-team__position">UI Designer</p>
