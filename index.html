@@ -139,13 +139,15 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button type="button" class="button hero__button" data-modal-open>
+        <button type="button" class="button hero__button" data-modal-open
+        aria-label="modal-order-open">
           Замовити послугу
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="backdrop__modal modal">
             <div class="modal__action-close">
-              <button class="modal__buttone-close button-close" type="button" data-modal-close>
+              <button class="modal__buttone-close button-close" type="button" data-modal-close
+              aria-label="modal-order-close">
                 <svg class="icon">
                   <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
@@ -205,7 +207,8 @@
                 </svg>
               </label>
 
-              <button class="button" type="submit">Відправити</button>
+              <button class="button" type="submit"
+              aria-label="modal-order-submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -678,7 +681,7 @@
             <input class="form-sign__input-field" type="email" name="mail" required placeholder="E-mail" />
           </label>
 
-          <button class="button" type="submit">
+          <button class="button" type="submit" aria-label="form-sign-submit">
             Підписатися
             <svg class="button__icon">
               <use href="./img/symbol-defs.svg#icon-send"></use>
