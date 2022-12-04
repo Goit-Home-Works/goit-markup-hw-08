@@ -26,6 +26,7 @@
 }
 .our-team__image {
   display: block;
+  width: 100%;
   @media screen and (max-width: $pre-tablet) {
     max-width: 450px;
     max-height: 622px;
@@ -41,6 +42,11 @@
 }
 
 .our-team__description {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 32px;
 
   background: #ffffff;
 
@@ -58,6 +64,8 @@
 }
 
 .our-team__position {
+  margin-top: 10px;
+    margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;

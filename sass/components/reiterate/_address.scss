@@ -79,7 +79,18 @@ letter-spacing: 0.02em;
         color: $accent-color;
     }
 }
+.page-header-address__link {
+    display: flex;
+        align-items: center;
 
+    @media screen and (min-width: $desktop) {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+}
+
+}
 
 
 .map {

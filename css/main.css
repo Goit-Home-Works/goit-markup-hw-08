@@ -452,6 +452,21 @@ img {
   color: #2196f3;
 }
 
+.page-header-address__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .page-header-address__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .map {
   color: #FFFFFF;
 }
@@ -863,6 +878,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
   }
@@ -1163,6 +1180,7 @@ img {
 
 .our-team__image {
   display: block;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .our-team__image {
@@ -1184,6 +1202,20 @@ img {
 }
 
 .our-team__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 32px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1199,6 +1231,8 @@ img {
 }
 
 .our-team__position {
+  margin-top: 10px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -1650,6 +1684,7 @@ img {
   display: inline-block;
   width: 94vw;
   height: 50px;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;

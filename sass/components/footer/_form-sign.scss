@@ -36,6 +36,7 @@
   display: inline-block;
   width: 94vw;
   height: 50px;
+  padding-left: 16px;
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
@@ -44,10 +45,6 @@
 
   }
   
-
-
-  
-
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #ffffff;
